@@ -14,10 +14,10 @@ struct ContentView: View {
 
         List(todos){ todo in
             VStack(alignment: .leading) {
-                Text(todo.id.description)
+                Text("ID: \(todo.id.description)")
                     .foregroundColor(.blue)
-                Text(todo.title)
                     .bold()
+                Text(todo.title)
             }.padding()
             
         }
